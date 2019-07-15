@@ -3,12 +3,22 @@ const assert = require("assert");
 // Feel free to look things up online!
 
 const tokenize = str => {
-  // TODO - write a function which converts a multi-word string into an array of words
+  const split = str.split(" ")
+return(split)
 };
+console.log(tokenize("Hello world!"))
 
-const reverse = str => {
-  // TODO - write a function which reverses the string
+  // TODO - write a function which converts a multi-word string into an array of words
+
+const reverseString = str => {
+  const stringSplit = str.split("");
+  const reverseArray = stringSplit.reverse();
+  const joinArray = reverseArray.join()
+return joinArray
 };
+console.log(reverseString("Bon Jour"))
+
+  // TODO - write a function which reverses the string
 
 const uniqueOnes = arr => {
   // TODO - write a function which returns the inputted array without duplicate elements
